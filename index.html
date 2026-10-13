@@ -175,7 +175,7 @@
     </div>
   </section>
 
-  <section id="activities" class="section-pad">
+  <section id="activities" class="section-pad activities-section">
     <div class="container">
       <p class="section-eyebrow">Activities</p>
       <h2 class="section-title">Web development coursework</h2>
@@ -183,20 +183,36 @@
         Activities from my Web Development class, kept in their own repository and deployed with GitHub Pages.
       </p>
       <div class="row g-4 mt-2">
-        <div class="col-lg-6">
-          <article class="activity-card h-100">
-            <span class="activity-number">Activity 1</span>
-            <h3 class="activity-title">Bento Layout</h3>
-            <p>A responsive bento layout built with Bootstrap's row and column system, presented as an art commission sheet.</p>
-            <a href="https://no-one-like-zion.github.io/activities/bento-layout/" class="btn btn-brand rounded-pill px-4">View Activity</a>
+        <div class="col-lg-7">
+          <article class="activity-card activity-featured h-100">
+            <div class="activity-preview" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="activity-body">
+              <span class="activity-number">Activity 1</span>
+              <h3 class="activity-title">Bento Layout</h3>
+              <p>A responsive bento layout built with Bootstrap's row and column system, presented as an art commission sheet.</p>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="activity-tag">Bootstrap Grid</span>
+                <span class="activity-tag">Responsive</span>
+                <span class="activity-tag">Static Data</span>
+              </div>
+              <a href="https://no-one-like-zion.github.io/activities/bento-layout/" class="btn btn-brand rounded-pill px-4">View Activity <span class="arrow">&rarr;</span></a>
+            </div>
           </article>
         </div>
-        <div class="col-lg-6">
-          <article class="activity-card h-100">
-            <span class="activity-number">Repository</span>
-            <h3 class="activity-title">All Activities</h3>
-            <p>Every web development activity this semester, each in its own folder, in one place.</p>
-            <a href="https://no-one-like-zion.github.io/activities/" class="btn btn-outline-brand rounded-pill px-4">Browse All Activities</a>
+        <div class="col-lg-5">
+          <article class="activity-card activity-side h-100">
+            <div class="activity-body">
+              <span class="activity-number">Repository</span>
+              <h3 class="activity-title">All Activities</h3>
+              <p>Every web development activity this semester, each in its own folder, in one place.</p>
+              <div class="folder-list" aria-hidden="true">
+                <div>activities/</div>
+                <div class="folder-child">bento-layout/</div>
+              </div>
+              <a href="https://no-one-like-zion.github.io/activities/" class="btn btn-light-brand rounded-pill px-4">Browse All Activities <span class="arrow">&rarr;</span></a>
+            </div>
           </article>
         </div>
       </div>
